@@ -1,0 +1,15 @@
+<set name="Entry6">
+<str name="displayName">
+<val>Street Addresses</val>
+</str>
+<str name="regEx" translate="no">
+<val>(\b)[NESW]{0,2}\s?\d+\s[\w+\s]+(\b)</val>
+</str>
+<str name="examples">
+<val>This pattern will search for street addresses and select for redaction the address number and street name.
+
+For example:
+"1234 Main Street, Kansas City, MO" --> "1234 Main Street" for redaction.
+</val>
+</str>
+</set>
