@@ -1,0 +1,16 @@
+<set name="Entry8">
+<str name="displayName">
+<val>ZIP Codes</val>
+</str>
+<str name="regEx" translate="no">
+<val>\b\d{5}\b(?:[- ]{1}\d{4})?</val>
+</str>
+<str name="examples">
+<val>This pattern will search for ZIP and ZIP+4 Codes.
+
+For example:
+"1234 Main Street, Kansas City, MO 99999" --> "99999" for redaction.
+"1234 Main Street, Kansas City, MO 99999-9999" --> "99999-9999" for redaction.
+</val>
+</str>
+</set>

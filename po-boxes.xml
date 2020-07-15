@@ -1,0 +1,19 @@
+<set name="Entry7">
+<str name="displayName">
+<val>P.O. Box</val>
+</str>
+<str name="regEx" translate="no">
+<val>\b[P|p](OST|ost|o|O)?\.?\s*[O|o]+(ffice|FFICE)?\.?\s*[B|b][O|o|0]?[X|x]+\.?\s+[#]?\s?(\d+)\b</val>
+</str>
+<str name="examples">
+<val>This pattern will search for P.O. boxes. It will select any variation/abbreviation/combination of "post office," including single periods for abbreviations, as long as numbers follow.
+
+For example, the following would be marked for redaction:
+PO Box 1234
+P.O. Box 1234
+PO. Box 1234
+pobox 1234
+Post office Box 1234
+</val>
+</str>
+</set>
