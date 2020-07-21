@@ -37,7 +37,7 @@ Windows Vista and newer:
 Windows XP:
 `\Documents and Settings\<username>\Application Data\Adobe\Acrobat\<version>\Preferences\Redaction\<locale>\SearchRedactPatterns.xml`.
 
-**Locales**
+**Locales**  
 For each version of Acrobat on the machine, there is a pattern file for each locale that has been used. For example, if my computer has both Acrobat DC and Acrobat XI, `/Adobe/Acrobat` will contain both `/DC` and `/11`. If I have used Acrobat XI to search in Japanese and United States locales, then ``/11`` with contain  `/Redaction/JPN/SearchRedactPatterns.xml` and `/Redaction/ENU/SearchRedactPatterns.xml`.
 
 To change locale, or to force Acrobat to create the `SearchRedactPatterns.xml` file you want to edit, open Acrobat and navigate to Preferences>Documents and select your desired locale from the dropdown menu under the Redaction heading.
@@ -78,5 +78,5 @@ After saving the file, restart Acrobat. Open a PDF and choose the redact tool. W
 ## Misc.
 - Save a copy of the original XML file before you begin tinkering.
 - The only attribute value you need to change is the set number (e.g., "Entry5").
-- In [Acrobat 9](https://helpx.adobe.com/archive/acrobat/acrobat-9-troubleshooting.pdf) and up, different patterns exist for different countries and languages ("locales"). See [locales](#-create-or-edit-a-set) above.
+- In [Acrobat 9](https://helpx.adobe.com/archive/acrobat/acrobat-9-troubleshooting.pdf) and up, different patterns exist for different countries and languages ("locales"). See [locales](#-open-the-search-redact-patterns-file-after-backing-it-up) above.
 - I *think* that Acrobat uses a Perl regex engine and that you might be able to switch it to Java. This is based on documentation and forums on other Adobe products, specifically [InDesign](https://community.adobe.com/t5/indesign/grep-what-is-the-base-syntax-of-indesign-grep/td-p/10321905) and [ColdFusion](https://helpx.adobe.com/coldfusion/developing-applications/the-cfml-programming-language/using-regular-expressions-in-functions/regular-expression-syntax.html). That ColdFusion page has a feature comparison table of the two engines. If the differences matter to you, then you probably don't need my help.
