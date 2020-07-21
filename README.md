@@ -16,10 +16,10 @@ Adobe Acrobat's redact tool can search for patterns; however, the functionality 
 Anyone unfortunate enough to have a light understanding of regex can add patterns. I have such an understanding. Read on and you might too.
 
 ## How do I add search redact patterns?
-📂 **Open** the search redact patterns file (after backing it up)
-📝 **Create** or edit a set
-💾 **Save** the edited file
-🔏 **Restart** Acrobat and redact away
+📂 **Open** the search redact patterns file (after backing it up)  
+📝 **Create** or edit a set  
+💾 **Save** the edited file  
+🔏 **Restart** Acrobat and redact away  
 
 Rick Borstein wrote about [creating and using custom redaction patterns](https://blogs.adobe.com/acrolaw/2011/05/creating_and_using_custom_redact/) on the blog [Acrolaw](https://blogs.adobe.com/acrolaw/). A good chunk of this walk-through is duplicative of Rick's great primer.
 
