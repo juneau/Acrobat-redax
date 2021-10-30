@@ -38,7 +38,7 @@ Windows XP:
 `\Documents and Settings\<username>\Application Data\Adobe\Acrobat\<version>\Preferences\Redaction\<locale>\SearchRedactPatterns.xml`.
 
 **Locales**  
-For each version of Acrobat on the machine, there is a pattern file for each locale that has been used. For example, if my computer has both Acrobat DC and Acrobat XI, `/Adobe/Acrobat` will contain both `/DC` and `/11`. If I have used Acrobat XI to search in Japanese and United States locales, then ``/11`` with contain  `/Redaction/JPN/SearchRedactPatterns.xml` and `/Redaction/ENU/SearchRedactPatterns.xml`.
+For each version of Acrobat on the machine, there is a pattern file for each locale that has been used. For example, if my computer has both Acrobat DC and Acrobat XI, `/Adobe/Acrobat` will contain both `/DC` and `/11`. If I have used Acrobat XI to search in Japanese and United States locales, then ``/11`` will contain  `/Redaction/JPN/SearchRedactPatterns.xml` and `/Redaction/ENU/SearchRedactPatterns.xml`.
 
 To change locale, or to force Acrobat to create the `SearchRedactPatterns.xml` file you want to edit, open Acrobat and navigate to Preferences>Documents and select your desired locale from the dropdown menu under the Redaction heading.
 
