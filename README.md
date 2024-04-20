@@ -22,7 +22,7 @@ Anyone unfortunate enough to have a light understanding of regex can add pattern
 💾 **Save** the edited file  
 🔏 **Restart** Acrobat and redact away  
 
-Rick Borstein wrote about [creating and using custom redaction patterns](https://blogs.adobe.com/acrolaw/2011/05/creating_and_using_custom_redact/) on the now-defunct blog [Acrolaw](https://blogs.adobe.com/acrolaw/). A good chunk of this walk-through is duplicative of Rick's great primer, which seems to have been carried over to Adobe's [genearl blog](https://blog.adobe.com/en/publish/2011/05/11/creating-and-using-custom-redact).
+Rick Borstein wrote about [creating and using custom redaction patterns](https://blogs.adobe.com/acrolaw/2011/05/creating_and_using_custom_redact/) on the now-defunct blog [Acrolaw](https://blogs.adobe.com/acrolaw/). A good chunk of this walk-through is duplicative of Rick's great primer, which seems to have been carried over to Adobe's [general blog](https://blog.adobe.com/en/publish/2011/05/11/creating-and-using-custom-redact).
 
 ### 📂 Open the search redact patterns file (after backing it up)
 Redaction patterns are stored in XML files. These files begin with the prolog `<?xml ... ?>` and end with tag `</asf>`.
@@ -38,7 +38,7 @@ Windows Vista and newer:
 Windows XP:
 `\Documents and Settings\<username>\Application Data\Adobe\Acrobat\<version>\Preferences\Redaction\<locale>\SearchRedactPatterns.xml`.
 
-Note that there is a `SearchRedactPatterns.xml` one level up in `...<version>\Redaction`, and changing that file won't make your patterns appear.
+Note that there is a `SearchRedactPatterns.xml` one level up in `...\<version>\Redaction\`, and changing that file won't make your patterns appear.
 
 **Locales**  
 For each version of Acrobat on the machine, there is a pattern file for each locale that has been used. For example, if my computer has both Acrobat DC and Acrobat XI, `/Adobe/Acrobat` will contain both `/DC` and `/11`. If I have used Acrobat XI to search in Japanese and United States locales, then ``/11`` will contain  `/Redaction/JPN/SearchRedactPatterns.xml` and `/Redaction/ENU/SearchRedactPatterns.xml`.
