@@ -4,6 +4,7 @@ Regular expressions that expand Adobe Acrobat's search-and-redact functions.
 - [P.O. boxes](/patterns/po-boxes.xml)
 - [U.S. address number and street names](/patterns/US-street-addresses.xml)
 - [ZIP and ZIP+4 codes](/patterns/ZIP-Codes.xml)
+- [State of Alaska trial court case numbers](/patterns/ZIP-Codes.xml)
 
 ## What is this for?
 Adobe Acrobat's redact tool can search for patterns; however, the functionality is limited. For example, the built-in English (US) patterns are:
@@ -21,7 +22,7 @@ Anyone unfortunate enough to have a light understanding of regex can add pattern
 💾 **Save** the edited file  
 🔏 **Restart** Acrobat and redact away  
 
-Rick Borstein wrote about [creating and using custom redaction patterns](https://blogs.adobe.com/acrolaw/2011/05/creating_and_using_custom_redact/) on the blog [Acrolaw](https://blogs.adobe.com/acrolaw/). A good chunk of this walk-through is duplicative of Rick's great primer.
+Rick Borstein wrote about [creating and using custom redaction patterns](https://blogs.adobe.com/acrolaw/2011/05/creating_and_using_custom_redact/) on the now-defunct blog [Acrolaw](https://blogs.adobe.com/acrolaw/). A good chunk of this walk-through is duplicative of Rick's great primer, which seems to have been carried over to Adobe's [genearl blog](https://blog.adobe.com/en/publish/2011/05/11/creating-and-using-custom-redact).
 
 ### 📂 Open the search redact patterns file (after backing it up)
 Redaction patterns are stored in XML files. These files begin with the prolog `<?xml ... ?>` and end with tag `</asf>`.
@@ -36,6 +37,8 @@ Windows Vista and newer:
 
 Windows XP:
 `\Documents and Settings\<username>\Application Data\Adobe\Acrobat\<version>\Preferences\Redaction\<locale>\SearchRedactPatterns.xml`.
+
+Note that there is a `SearchRedactPatterns.xml` one level up in `...<version>\Redaction`, and changing that file won't make your patterns appear.
 
 **Locales**  
 For each version of Acrobat on the machine, there is a pattern file for each locale that has been used. For example, if my computer has both Acrobat DC and Acrobat XI, `/Adobe/Acrobat` will contain both `/DC` and `/11`. If I have used Acrobat XI to search in Japanese and United States locales, then ``/11`` will contain  `/Redaction/JPN/SearchRedactPatterns.xml` and `/Redaction/ENU/SearchRedactPatterns.xml`.
@@ -79,4 +82,4 @@ After saving the file, restart Acrobat. Open a PDF and choose the redact tool. W
 - Save a copy of the original XML file before you begin tinkering.
 - The only attribute value you need to change is the set number (e.g., "Entry5").
 - In [Acrobat 9](https://helpx.adobe.com/archive/acrobat/acrobat-9-troubleshooting.pdf) and up, different patterns exist for different countries and languages ("locales"). See [locales](#-open-the-search-redact-patterns-file-after-backing-it-up) above.
-- I *think* that Acrobat uses a Perl regex engine and that you might be able to switch it to Java. This is based on documentation and forums on other Adobe products, specifically [InDesign](https://community.adobe.com/t5/indesign/grep-what-is-the-base-syntax-of-indesign-grep/td-p/10321905) and [ColdFusion](https://helpx.adobe.com/coldfusion/developing-applications/the-cfml-programming-language/using-regular-expressions-in-functions/regular-expression-syntax.html). That ColdFusion page has a feature comparison table of the two engines. If the differences matter to you, then you probably don't need my help.
+- I *thought* that Acrobat used a Perl regex engine and that you might be able to switch it to Java. This was based on documentation and forums on other Adobe products, specifically [InDesign](https://community.adobe.com/t5/indesign/grep-what-is-the-base-syntax-of-indesign-grep/td-p/10321905) and [ColdFusion](https://helpx.adobe.com/coldfusion/developing-applications/the-cfml-programming-language/using-regular-expressions-in-functions/regular-expression-syntax.html). That ColdFusion page has a feature comparison table of the two engines. [Another user said](https://community.adobe.com/t5/acrobat-discussions/custom-redaction-patterns-inconsistent-in-acrobat-pro-dc-what-quot-flavor-quot-regex-to-use/m-p/12501342) it uses JavaScript RegExp. If the differences matter to you, then you're probably beyond my help.
