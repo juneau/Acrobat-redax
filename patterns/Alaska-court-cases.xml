@@ -1,0 +1,18 @@
+<set name="Entry9">
+<str name="displayName">
+<val>Alaska trial court cases</val>
+</str>
+<str name="regEx" translate="no">
+<val>\b(3AN|1AG|4AK|4BE|2BU|4CH|2CH|3CB|3CO|1CR|4DJ|3DI|4EM|2EM|4FA|4FY|4GA|2GB|3GL|1HA|4HE|3HO|1HN|4HB|2HB|1JU|1KA|4KS|3KN|1KE|2KI|3KO|2KB|4MC|4ME|2ME|4MV|2MV|3NA|4NE|2NO|2NR|3PA|1PL|1PE|1PW|2PH|4QU|4RA|4SM|2SM|3ST|3SP|2SA|4SB|2SB|2SE|3SL|3SW|2SH|1SI|1SK|4TA|3TG|4TO|4TU|2UT|3UN|2BA|3VA|2WL|3WH|1WR|1YA|
+)-(S|C|M|B)?\d{2}-\d{1,6}(AU|CI|CI\.A|CN|CO|CP|CR|DL|DR|DV|MC|MO|PR|SC|TR|WI)?\b</val>
+</str>
+<str name="examples">
+<val>This pattern will search for state of Alaska trial court case numbers. It includes all current and closed court location codes (i.e., prefixes), as well as the following case types (i.e., suffixes): alcohol underage (AU), civil (CI), child in need of aid (CN), coroner (CO), child protection (CP), criminal (CR), delinquency (DL), domestic relations (DR), domestic violence (DV, CI.A), mental commitment (MC), minor offense (MO or none), probate (PR), small claims (SC), registration of trust (TR), and deposit of will (WI). See Alaska Rule of Administration 41 and https://courts.alaska.gov/trialcourts/cvinfo.htm for more information on case numbering.
+
+For example, the following would be marked for redaction:
+3DI-15-00010AU
+2KB-98-01234
+1JU-23-1CR
+</val>
+</str>
+</set>
