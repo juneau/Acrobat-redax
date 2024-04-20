@@ -4,7 +4,7 @@ Regular expressions that expand Adobe Acrobat's search-and-redact functions.
 - [P.O. boxes](/patterns/po-boxes.xml)
 - [U.S. address number and street names](/patterns/US-street-addresses.xml)
 - [ZIP and ZIP+4 codes](/patterns/ZIP-Codes.xml)
-- [State of Alaska trial court case numbers](/patterns/ZIP-Codes.xml)
+- [State of Alaska trial court case numbers](/patterns/Alaska-trial-court-case-numbers.xml)
 
 ## What is this for?
 Adobe Acrobat's redact tool can search for patterns; however, the functionality is limited. For example, the built-in English (US) patterns are:
